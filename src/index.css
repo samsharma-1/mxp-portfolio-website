@@ -176,6 +176,10 @@ button {
     background 180ms ease;
 }
 
+.topnav::-webkit-scrollbar {
+  height: 0;
+}
+
 .topnav a:hover {
   transform: translateY(-1px);
   border-color: rgba(56, 189, 248, 0.24);
@@ -1062,6 +1066,20 @@ button {
     flex-direction: column;
   }
 
+  .topnav {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .topnav::-webkit-scrollbar {
+    display: none;
+  }
+
   .brand-copy span {
     line-height: 1.4;
   }
@@ -1090,6 +1108,17 @@ button {
 
   .button {
     width: 100%;
+  }
+
+  .member-social-buttons {
+    gap: 0.6rem;
+  }
+
+  .social-pill {
+    width: 100%;
+    min-height: 3rem;
+    padding: 0.8rem 1rem;
+    border-radius: 1.1rem;
   }
 
   .hero-visual {
